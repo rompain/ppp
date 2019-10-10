@@ -241,6 +241,7 @@ bool explicit_remote = 0;	/* User specified explicit remote name */
 bool explicit_user = 0;		/* Set if "user" option supplied */
 bool explicit_passwd = 0;	/* Set if "password" option supplied */
 char remote_name[MAXNAMELEN];	/* Peer's name for authentication */
+bool tls_verify_cert = 0;	/* Do not verify server's SSL certificate */
 
 static char *uafname;		/* name of most recent +ua file */
 
@@ -403,6 +404,9 @@ option_t auth_options[] = {
     { "allow-number", o_special, (void *)set_permitted_number,
       "Set telephone number(s) which are allowed to connect",
       OPT_PRIV | OPT_A2LIST },
+
+    { "tls-verify-certificate", o_bool, &tls_verify_cert,
+      "Enable server's SSL certificate validation", 1 },
 
     { NULL }
 };

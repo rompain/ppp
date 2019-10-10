@@ -101,6 +101,7 @@
 #include "upap.h"
 #include "chap-new.h"
 #include "eap.h"
+#include "peap.h"
 #include "ccp.h"
 #include "ecp.h"
 #include "pathnames.h"
@@ -292,6 +293,7 @@ struct protent *protocols[] = {
     &atcp_protent,
 #endif
     &eap_protent,
+    &peap_protent,
     NULL
 };
 

@@ -59,6 +59,7 @@ extern "C" {
 #define	EAPT_NOKIACARD		18	/* Nokia IP smart card */
 #define	EAPT_SRP		19	/* Secure Remote Password */
 /* 20 is deprecated */
+#define	EAPT_PEAP		25	/* Microsoft PEAP */
 
 /* EAP SRP-SHA1 Subtypes */
 #define	EAPSRP_CHALLENGE	1	/* Request 1 - Challenge */
