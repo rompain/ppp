@@ -94,6 +94,7 @@
 #define PPP_CHAP	0xc223	/* Cryptographic Handshake Auth. Protocol */
 #define PPP_CBCP	0xc029	/* Callback Control Protocol */
 #define PPP_EAP		0xc227	/* Extensible Authentication Protocol */
+#define PPP_PEAP	0xc227	/* Protected Extensible Authentication Protocol is still in draft, using EAP protocol number */
 
 /*
  * Values for FCS calculations.
